@@ -9,11 +9,11 @@
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
-  <h3>Name my pet</h3>
+  <img src="{{ url_for('static', filename='paimon.png') }}" class="icon" />
+  <h3>パイモンと話そう！</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter an animal" required />
-    <input type="submit" value="Generate names" />
+    <input type="text" name="animal" placeholder="おはよう、パイモン！" required />
+    <input type="submit" value="話しかける" />
   </form>
   {% if result %}
   <div class="result">{{ result }}</div>
